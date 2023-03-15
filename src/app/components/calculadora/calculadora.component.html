@@ -1,0 +1,36 @@
+<div class="calculator">
+  <div class="display">
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="display" disabled></ion-input>
+    </ion-item>
+  </div>
+  <div class="keypad">
+    <div class="row">
+      <ion-button (click)="add('7')">7</ion-button>
+      <ion-button (click)="add('8')">8</ion-button>
+      <ion-button (click)="add('9')">9</ion-button>
+      <ion-button (click)="clear()">C</ion-button>
+    </div>
+    <div class="row">
+      <ion-button (click)="add('4')">4</ion-button>
+      <ion-button (click)="add('5')">5</ion-button>
+      <ion-button (click)="add('6')">6</ion-button>
+      <ion-button (click)="add('+')">+</ion-button>
+    </div>
+    <div class="row">
+      <ion-button (click)="add('1')">1</ion-button>
+      <ion-button (click)="add('2')">2</ion-button>
+      <ion-button (click)="add('3')">3</ion-button>
+      <ion-button (click)="add('-')">-</ion-button>
+    </div>
+    <div class="row">
+      <ion-button (click)="add('0')">0</ion-button>
+      <ion-button (click)="add('.')">.</ion-button>
+      <ion-button (click)="calculate()">=</ion-button>
+      <ion-button (click)="add('*')">*</ion-button>
+    </div>
+    <div class="row">
+      <ion-button (click)="add('/')">/</ion-button>
+    </div>
+  </div>
+</div>
